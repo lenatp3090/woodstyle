@@ -24,9 +24,17 @@ MEDIA_ROOT = BASE_DIR / "media"
 SECRET_KEY = 'django-insecure-5h7)3d2)8*f=mf@ti#3i5dgb($&t22h1q7b_bzee#ve-jpif-&'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
 
-ALLOWED_HOSTS = []
+
+DEBUG = False
+
+The uploaded error page also shows that DEBUG is still enabled.
+
+ALLOWED_HOSTS = [
+    "wood-style.onrender.com",
+    "127.0.0.1",
+    "localhost",
+]
 
 
 # Application definition
@@ -105,7 +113,9 @@ AUTH_PASSWORD_VALIDATORS = [
 ]
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:5173",
+    "https://your-vercel-app.vercel.app",
 ]
+
 
 # Internationalization
 # https://docs.djangoproject.com/en/6.0/topics/i18n/
