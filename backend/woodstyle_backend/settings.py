@@ -28,7 +28,6 @@ SECRET_KEY = 'django-insecure-5h7)3d2)8*f=mf@ti#3i5dgb($&t22h1q7b_bzee#ve-jpif-&
 
 DEBUG = False
 
-The uploaded error page also shows that DEBUG is still enabled.
 
 ALLOWED_HOSTS = [
     "wood-style.onrender.com",
