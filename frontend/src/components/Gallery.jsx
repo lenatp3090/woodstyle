@@ -8,7 +8,7 @@ function Gallery() {
 
 
   useEffect(() => {
-    fetch("http://127.0.0.1:8000/api/gallery/")
+    fetch("https://wood-style.onrender.com/api/gallery/")
       .then((response) => response.json())
       .then((data) => setImages(data))
       .catch((error) => console.log(error));
